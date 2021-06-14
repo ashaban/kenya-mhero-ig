@@ -185,6 +185,7 @@ Usage:          #example
 * extension[section][0].extension[field][2].valueString = "Practitioner.name.family"
 * extension[section][0].extension[field][3].valueString = "Practitioner.birthDate"
 * extension[section][0].extension[field][4].valueString = "Practitioner.gender"
+* extension[section][0].extension[field][5].valueString = "Practitioner.extension:residence"
 * extension[section][1].extension[title].valueString = "Identifiers"
 * extension[section][1].extension[description].valueString = "Personal identifiers"
 * extension[section][1].extension[name].valueString = "identifiers"
