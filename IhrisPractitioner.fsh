@@ -95,7 +95,7 @@ Description:    "iHRIS profile of Practitioner."
     IhrisPractitionerNationality named nationality 0..1 and
     IhrisPractitionerMaritalStatus named maritalStatus 0..1 and
     IhrisPractitionerDependents named dependents 0..1
-* extension[residence].valueReference.reference 0..1 MS
+* extension[residence].valueReference MS
 
 Extension:      IhrisPractitionerLanguageProficiency
 Id:             ihris-practitioner-language-proficiency
