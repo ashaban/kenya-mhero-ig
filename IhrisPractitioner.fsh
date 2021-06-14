@@ -293,7 +293,7 @@ Usage:          #definition
 * item[1].item[0].item[2].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.address.line"
 * item[1].item[0].item[2].text = "Street Address"
 * item[1].item[0].item[2].type = #string
-* item[1].item[0].item[2].required = true
+* item[1].item[0].item[2].required = false
 * item[1].item[0].item[2].repeats = true
 
 * item[1].item[0].item[3].linkId = "Practitioner.address[0].city"
@@ -386,7 +386,7 @@ Usage:          #definition
 * item[1].item[6].repeats = false
 
 * item[2].linkId = "PractitionerRole"
-* item[2].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role"
+* item[2].definition = "http://ihris.org/fhir/StructureDefinition/iHRISPractitionerRole"
 * item[2].text = "Position|Position the person holds"
 * item[2].type = #group
 * item[2].extension[constraint][0].extension[key].valueId = "ihris-start-end-date"
@@ -395,7 +395,7 @@ Usage:          #definition
 * item[2].extension[constraint][0].extension[human].valueString = "The end date must be after the start date."
 
 * item[2].item[0].linkId = "PractitionerRole.practitioner"
-* item[2].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.practitioner"
+* item[2].item[0].definition = "http://ihris.org/fhir/StructureDefinition/iHRISPractitionerRole#PractitionerRole.practitioner"
 * item[2].item[0].text = "Practitioner"
 * item[2].item[0].type = #string
 * item[2].item[0].required = true
@@ -405,7 +405,7 @@ Usage:          #definition
 * item[2].item[0].answerOption.initialSelected = true
 
 * item[2].item[1].linkId = "PractitionerRole.code"
-* item[2].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.code"
+* item[2].item[1].definition = "http://ihris.org/fhir/StructureDefinition/iHRISPractitionerRole#PractitionerRole.code"
 * item[2].item[1].text = "Job Title"
 * item[2].item[1].type = #choice
 * item[2].item[1].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-job"
@@ -413,24 +413,24 @@ Usage:          #definition
 * item[2].item[1].repeats = false
 
 * item[2].item[2].linkId = "PractitionerRole.period.start"
-* item[2].item[2].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.period.start"
+* item[2].item[2].definition = "http://ihris.org/fhir/StructureDefinition/iHRISPractitionerRole#PractitionerRole.period.start"
 * item[2].item[2].text = "Start Date"
 * item[2].item[2].type = #dateTime
 * item[2].item[2].required = true
 * item[2].item[2].repeats = false
 
 * item[2].item[3].linkId = "PractitionerRole.period.end"
-* item[2].item[3].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.period.end"
+* item[2].item[3].definition = "http://ihris.org/fhir/StructureDefinition/iHRISPractitionerRole#PractitionerRole.period.end"
 * item[2].item[3].text = "End Date"
 * item[2].item[3].type = #dateTime
 * item[2].item[3].required = false
 * item[2].item[3].repeats = false
 
 * item[2].item[4].linkId = "PractitionerRole.location[0]"
-* item[2].item[4].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.location"
+* item[2].item[4].definition = "http://ihris.org/fhir/StructureDefinition/iHRISPractitionerRole#PractitionerRole.location"
 * item[2].item[4].text = "Facility"
 * item[2].item[4].type = #reference
-* item[2].item[4].required = true
+* item[2].item[4].required = false
 * item[2].item[4].repeats = false
 
 * item[3].linkId = "Practitioner.identifier"
